@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
+import React from "react";
+import { FaEnvelope, FaPhone, FaMapMarkedAlt } from "react-icons/fa";
 
 function Contact() {
   return (
@@ -11,41 +11,54 @@ function Contact() {
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Left Section */}
-          <div className="flex-1 space-y-6">
-            <h3 className="text-2xl font-semibold">Let's Talk</h3>
-            <p className="text-gray-300">
-              I'm open to freelance work, collaborations, or discussing new projects.
-              Let’s get in touch.
+
+          <div className="flex-1 space-y-6 text-gray-200">
+            <h3 className="text-2xl sm:text-3xl font-semibold">Let's Talk</h3>
+
+            <p className="text-base sm:text-lg text-gray-400 leading-relaxed">
+              I'm open to freelance work, collaborations, or discussing new
+              projects. Feel free to reach out anytime via email or phone.
             </p>
 
-            <div className="space-y-4 mt-6">
-              <div className="flex items-center">
-                <FaEnvelope className="text-red-600 mr-3" />
+            <ul className="space-y-6 pt-4">
+              <li className="flex items-start gap-4">
+                <span className="mt-1">
+                  <FaEnvelope className="text-red-500 w-6 h-6" />
+                </span>
                 <a
                   href="mailto:chaudharisunny6@gmail.com"
-                  className="hover:underline text-gray-200"
+                  className="hover:underline text-sm sm:text-base break-words"
                 >
                   chaudharisunny6@gmail.com
                 </a>
-              </div>
+              </li>
 
-              <div className="flex items-center">
-                <FaPhone className="text-red-600 mr-3" />
-                <span>+91 94326 902563</span>
-              </div>
+              <li className="flex items-start gap-4">
+                <span className="mt-1">
+                  <FaPhone className="text-red-500 w-6 h-6" />
+                </span>
+                <span className="text-sm sm:text-base">+91 94326 902563</span>
+              </li>
 
-              <div className="flex items-center">
-                <FaMapMarkedAlt className="text-red-600 mr-3" />
-                <span>Surat, Gujarat, India</span>
-              </div>
-            </div>
+              <li className="flex items-start gap-4">
+                <span className="mt-1">
+                  <FaMapMarkedAlt className="text-red-500 w-6 h-6" />
+                </span>
+                <span className="text-sm sm:text-base">
+                  Surat, Gujarat, India
+                </span>
+              </li>
+            </ul>
           </div>
 
           {/* Right Section - Contact Form */}
           <div className="flex-1 bg-gray-800 rounded-xl p-8 shadow-lg">
             <form className="space-y-6">
               <div>
-                <label htmlFor="name" className="block mb-1 text-sm font-medium">
+                <label
+                  htmlFor="name"
+                  className="block mb-1 text-sm font-medium"
+                >
                   Your Name
                 </label>
                 <input
@@ -57,7 +70,10 @@ function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block mb-1 text-sm font-medium">
+                <label
+                  htmlFor="email"
+                  className="block mb-1 text-sm font-medium"
+                >
                   Your Email
                 </label>
                 <input
@@ -69,7 +85,10 @@ function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block mb-1 text-sm font-medium">
+                <label
+                  htmlFor="message"
+                  className="block mb-1 text-sm font-medium"
+                >
                   Message
                 </label>
                 <textarea
@@ -82,7 +101,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="bg-red-600 hover:bg-red-700 transition-colors duration-300 text-white px-8 py-3 rounded-full font-medium w-full sm:w-auto"
+                className="bg-red-600 hover:bg-red-700 transition-colors duration-300 text-white px-8 py-3 rounded-xl font-medium w-full sm:w-auto"
               >
                 Send Message
               </button>
